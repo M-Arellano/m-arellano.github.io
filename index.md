@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Shuyan Shi Realty</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@200;300;400;500;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+        <script src="main.js"></script>
+        
+    </head>
+<body>
+    <header>
+        <navigation>
+            <div class="main_nav">
+                <nav>
+                    
+                        <a href="#home">Home</a>
+                        <a href="#about">About Me</a>
+                        <a href="#philosophy">My Philosophy</a>
+                        <a href="#tips">Steps to Buying</a>
+                        <a href="#tips">Tips to Sell Fast</a>
+                        <a href="#calculator">Mortgage Calculator</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#search">Search </a>
+                    
+                </nav>
+            </div>
+
+
+            <div class="mobile_nav">
+                
+                <div class="logo">
+                    <a href="#"><img src="resources/images/sr_logo_brw.png" alt="success realty logo"></a>
+                </div>
+                
+                <div class="menu"><a href="javascript:void(0);" onclick="myFunction()">Menu</a></div>
+                <nav class="mobile_menu" id="mobile_menu">
+                    
+                        <a href="#home">Home</a>
+                        <a href="#about">About Me</a>
+                        <a href="#philosophy">My Philosophy</a>
+                        <a href="#tips">Steps to Buying</a>
+                        <a href="#tips">Tips to Sell Fast</a>
+                        <a href="#calculator">Mortgage Calculator</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#search">Search </a>
+                    
+                </nav>
+            </div>
+        
+        </navigation>    
+    </header>
+
+    <div class="hero" id="home">
+        <div class="spacer"></div>
+        <div class="hero_content">
+            <div class="hero_overlay">
+                <p class="name">Shuyan Shi</p>
+                <img src="resources/images/asset.jpg" alt="Shuyan Shi" width="272" height="350">
+                <p class="brand">Success Realty</p>
+            </div>
+            <!--------------
+            <p class="slogan">I specialize in buying and selling homes, and investment properties</p>
+            ------------->
+            
+
+        </div>  
+
+    </div>
+
+    
+    
+
+    <main>
+        
+        
+        <div class="aboutwrapper" id="about">
+            <div class="spacer"></div>
+            <div class="about">
+
+                <h2>A little about Shuyan Shi</h2>
+                <div class="fampic">
+                    <img src="resources/images/family.jpg"  alt="family photo">
+                </div>
+
+                
+                <div class="about_list">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="symbol">❇</td><td>Enthusiastic and dedicated in assisting first generation immigrants in search of their home</td>
+                            </tr>
+                            <tr>
+                                <td class="symbol">❇</td><td>Family oriented, proud and loving mother of two</td>
+                            </tr>
+                            <tr>
+                                <td class="symbol">❇</td><td>Multinational business perspective</td>
+                            </tr>
+                            <tr>
+                                <td class="symbol">❇</td><td>Passionate about culinary arts, travelling, and cultural immersion</td>
+                            </tr>
+                            <tr>
+                                <td class="symbol">❇</td><td>Lived in Michigan since 2013</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="spacer"></div>
+        </div>
+
+            
+        
+
+        <div class="philosophy_container" id="philosophy">
+            <div class="philosophy">
+                <h2>SUCCESS IS NOT A DESTINATION, IT’S A JOURNEY</h2>
+
+                <p>When you work with me (Shuyan Shi) toward the sale or purchase of a home, you can count on me (her)to listen carefully to your specific needs, and I (she) will do everything in my (her) power to help you accomplish them. There is nothing more satisfying than helping people successfully navigate the process of buying or selling a home. For a successful real estate journey, call me (Shuyan Shi) today.</p>
+            </div>
+        </div>
+
+        
+        
+
+
+        <div class="tips" id="tips">
+            <div class="buy">
+                <img src="resources/images/asset3.jpg" alt="keys surrounded by paperwork">
+                <section> 
+                    <h2>Steps to buying a house:</h2>
+
+                    <ol>
+                        <li>Pre-Approval</li>
+                        <li>Wish List</li>
+                        <li>The Search</li>
+                        <li>Offer</li>
+                        <li>A legally binding contract</li>
+                        <li>Apply for mortgage</li>
+                        <li>Conduct home inspection and survey</li>
+                        <li>Closing</li>
+                    </ol>
+                </section>
+
+            </div>
+
+
+            <div class="sell" id="sell">
+                <img src="resources/images/asset4.jpg" alt="New home owner receiving keys">
+                <section>
+                    <h2>Essential Tips to Get Your Home Sold Fast:</h2>
+                    <ul>
+                        <li>Know why you’re selling and keep it to yourself.</li>
+                        <li>Do your homework before setting a price.</li>
+                        <li>Your tax assessment means almost nothing.</li>
+                        <li>Find a good realtor.</li>
+                        <li>Maximize your home’s sales potential.</li>
+                        <li>Fix everything no matter how insignificant it appears.</li>
+                        <li>Remove all traces of you from your home.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+
+
+
+    
+    <div id="calculator">    
+        <div class="mortgagecalculator">
+
+<!-----    <h2>Mortgage Calculator</h2>   ----->
+            
+            <div class="fullsize">
+                <iframe src ="https://www.mortgagecalculator.net/embeddable/v2/?size=1&textColor=003140&backgroundColor=9ee7ff" width="100%" frameborder=0 scrolling=no height=330></iframe>
+            </div>
+
+
+
+            <div class="large">
+                <iframe src ="https://www.mortgagecalculator.net/embeddable/v2/?size=2&textColor=003140&backgroundColor=9ee7ff" width="100%" frameborder=0 scrolling=no height=330></iframe>
+            </div>
+
+
+
+            <div class="medium">
+                <iframe src ="https://www.mortgagecalculator.net/embeddable/v2/?size=3&textColor=003140&backgroundColor=9ee7ff" width="100%" frameborder=0 scrolling=no height=330></iframe>
+            </div>
+
+
+            <div class="small">
+                <iframe src ="https://www.mortgagecalculator.net/embeddable/v2/?size=5&textColor=003140&backgroundColor=9ee7ff" width="100%" frameborder=0 scrolling=no height=330></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact" id="contact">
+
+        <h2>Shuyan Shi</h2>
+        <img src="resources/images/sr_logo_brw.png" alt="success realty logo" class="success_logo">
+        <h3>Realtor Success Realty</h3>
+        <div>
+            <p>Buying or selling a home is not only one of life’s largest transactions, but it is also a journey filled with potential pitfalls, excitement, and discovery. That’s why you need a real estate professional like me (Shuyan Shi) who knows what she is doing and who can guide you to success. </p>
+        </div>
+
+        <div class="contactwrapper">
+
+            <div class="contact_img">
+                <img src="resources/images/asset.jpg" class="asset2" alt="Shuyan Shi">
+            </div>
+
+            
+
+            <div class="contactinfo">
+                <h3>Contact Me</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><span class="wechaticon"><img src="resources/images/icons/wechat.png" alt="wechat icon"></span></td>
+                            <td>WeChat:</td>
+                            <td>Auronshi1314</td>
+                        </tr>
+                        <tr>
+                            <td><span class="mobileicon"><img src="resources/images/icons/mobile.jpg"></span></td>
+                            <td>Mobile:</td>
+                            <td>616-419-0515</td>
+                        </tr>
+                        <tr>
+                            <td><span class="emailicon"><img src="resources/images/icons/email.png"></span></td>
+                            <td>Email:</td>
+                            <td class="email">Auronshi1314<br>@gmail.com</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        
+        <div class="wechatqr">
+            <h5>Scan the QR code<br> to add my WeChat</h5>
+            <img src="resources/images/wechatqr.png" alt="wechat QR code">        
+        </div>
+    </div>
+
+
+
+
+
+    
+
+<div id="search">
+    <div class="mls_search">
+
+        <iframe src="https://www.successrealtywm.com/search/advanced_search/" title="Success Realty MLS Search" id="mls_search" sandbox="allow-forms allow-scripts"></iframe>
+
+    </div>
+</div>
+
+
+
+    
+
+
+
+
+
+
+    
+
+
+    </main>
+
+    <!-------------------------------------------
+    <footer>
+        <div class="footer">
+            <img src="resources/images/equal-housing-mls-icon.png" alt=" Equal Housing & MLS icon">
+            <ul>
+                <li>Success Realty West Michigan</li>
+                <li>1750 Grand Ridge Court, Suite 200</li>
+                <li>Grand Rapids, MI 49525</li>
+            </ul>
+        </div>
+        
+        
+        
+
+    </footer>
+    ------------------------------------------->
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mobile_menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+
+
+</body>
+</html> 
