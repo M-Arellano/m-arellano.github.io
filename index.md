@@ -247,39 +247,10 @@
             <h5>Scan the QR code<br> to add my WeChat</h5>
             <img src="resources/images/wechatqr.png" alt="wechat QR code">        
         </div>
+        
     </div>
-
-
-
-
-
-    
-
-<div id="search">
-    <div class="mls_search">
-
-        <iframe src="https://www.successrealtywm.com/search/advanced_search/" title="Success Realty MLS Search" id="mls_search" sandbox="allow-forms allow-scripts"></iframe>
-
-    </div>
-</div>
-
-
-
-    
-
-
-
-
-
-
-    
-
-
-    </main>
-
-    <!-------------------------------------------
-    <footer>
-        <div class="footer">
+    <section>
+        <div class="address">
             <img src="resources/images/equal-housing-mls-icon.png" alt=" Equal Housing & MLS icon">
             <ul>
                 <li>Success Realty West Michigan</li>
@@ -287,12 +258,25 @@
                 <li>Grand Rapids, MI 49525</li>
             </ul>
         </div>
-        
-        
-        
+    </section>
 
-    </footer>
-    ------------------------------------------->
+
+
+
+    
+
+        <div id="search">
+            <div class="mls_search">
+
+                <iframe src="https://www.successrealtywm.com/search/advanced_search/" title="Success Realty MLS Search" id="mls_search" sandbox="allow-forms allow-scripts"></iframe>
+
+            </div>
+        </div>
+
+
+    </main>
+
+  
 
     <script>
         function myFunction() {
