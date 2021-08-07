@@ -3,6 +3,15 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: inherit;
+}
+html {
+    font-size: 100%;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -73,10 +82,12 @@ header {
 /*********************************************
         NAVIGATION
 *********************************************/
+.main_nav {
+    display: none;
+}
 .mobile_nav {
     width: 100vw;
     overflow: hidden;
-    border: 1px dashed orangered;
 }
 .logo {
     width: 30%;
@@ -357,11 +368,7 @@ iframe {
     width: 960px;
 }
 
-#mls_search {
-    width: 100%;
-    height: 100vh;
-    border: none;
-}
+
 
 
 
@@ -458,19 +465,29 @@ td.email {
 
 
 
-
-.footer {
+.address {
+    width: 100%;
+    padding: 0;
+    margin: 0;
     text-align: center;
 }
-.footer ul {
+.address ul {
+    background-color: rgb(140, 157, 164);
+    color: whitesmoke;
+    font-size: 1.2rem;
     list-style: none;
+    padding: 1rem 0;
+}
+
+#mls_search {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 
-
-.main_nav {
-    display: none;
-}
 
 
 @media screen and (min-width: 600px) {
@@ -632,7 +649,7 @@ td.email {
     .philosophy_container {
         width: 100%;
         height: 100vh;
-        background: url('../resources/images/asset2.jpg') rgba(148, 255, 219, 0.404);
+        background: url('../resources/images/asset2wide.jpg') rgba(89, 109, 86, 0.603);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -640,7 +657,7 @@ td.email {
         background-blend-mode: multiply;
 
 
-        /*background: rgb(112, 153, 93);*/
+        /*background: rgb(148, 255, 219, 0.404);*/
     }
     .philosophy {
         width: 70%;
@@ -977,15 +994,6 @@ td.email {
     .philosophy_container {
         width: 100%;
         height: 100vh;
-        background: url('../resources/images/asset2wide.jpg') rgba(148, 255, 219, 0.404);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-blend-mode: multiply;
-
-
-        /*background: rgb(112, 153, 93);*/
     }
     .philosophy {
         width: 70%;
