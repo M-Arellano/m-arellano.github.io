@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@200;300;400;500;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" media="screen" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
        
     </head>
 <body>
