@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 
-/** { border: 1px solid limegreen; }*/
-
 * {padding: 0; margin: 0;}
 
 
 html {
     font-size: 16px;
 }
+
 
 h1 {
     font-family: 'Overpass', sans-serif;
@@ -59,13 +58,13 @@ footer a {
 }
 .center {text-align: center;}
 
-#close {
-    display: none;
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-    width: 8rem;
-    height: 8rem;
+body {
+    background-color: rgba(239, 239, 241, 0.301);
 }
+p {
+    color: hsl(207, 13%, 34%);
+}
+
 
 
 
@@ -75,10 +74,9 @@ footer a {
 
 .grid {
     display: grid;
-    width: 100vw;
-    overflow: hidden;
-    grid-template-columns: 1fr 4.5fr 4.5fr 1fr;
-    grid-template-rows: 600px 150px 800px 600px 800px 400px;
+    width: 100%;
+    grid-template-columns: 8% 42% 42% 8%;
+    grid-template-rows: 600px 100px 800px 600px 800px 300px;
     grid-template-areas: 
         'header header header header'
         '. future future .'
@@ -95,10 +93,7 @@ nav {
     grid-row: 1 / 2;
     grid-column: 2 / 4;
 }
-/*.logbtn {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-}*/
+
 header {
     grid-area: header;
     grid-row: 1 / 2;
@@ -161,6 +156,7 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 nav, .logo, .logbtn, .icon {
     z-index: 2;
@@ -168,8 +164,13 @@ nav, .logo, .logbtn, .icon {
 .dark {
     display: none;
 }
-.logo, .logbtn {
-    padding-top: 1rem;
+.logo {
+    padding-top: 2rem;
+}
+.logbtn {
+    align-self: center;
+    padding: 0;
+    margin: 0;
 }
 .headercta {
     display: flex;
@@ -195,11 +196,11 @@ nav, .logo, .logbtn, .icon {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     text-decoration: none;
-    padding: .5rem .7rem;
+    padding: .7rem .7rem;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 30px;
     margin: 0 .7rem;
-    z-index: 2;
+    z-index: 10;
 }
 .learn:hover {
     color: hsl(353, 100%, 62%);
@@ -214,7 +215,7 @@ nav, .logo, .logbtn, .icon {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     text-decoration: none;
-    padding: .5rem 1rem;
+    padding: .7rem 1rem;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 30px;
     margin: 0 .7rem;
@@ -222,14 +223,9 @@ nav, .logo, .logbtn, .icon {
 }
 .start:hover, .signup:hover {
     color: hsl(0, 0%, 100%);
-    background: hsl(356, 100%, 42%);
+    background: hsl(355, 100%, 74%);
     border: 1px solid hsl(0, 0%, 100%);
     
-}
-.signup:hover {
-    background-color:hsl(13, 100%, 72%);
-    color: hsl(0, 0%, 100%);
-    border: 1px solid hsl(13, 100%, 72%);
 }
 
 .login {
@@ -237,12 +233,14 @@ nav, .logo, .logbtn, .icon {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     text-decoration: none;
-    padding: .5rem .7rem;
+    padding: .5rem .3rem;
     margin: 0 .7rem;
 }
-.icon {
+.hamburger {
     display: none;
-    
+}
+.hr {
+    display: none;
 }
 
 /*******************************************
@@ -250,33 +248,32 @@ nav, .logo, .logbtn, .icon {
 *******************************************/
 
 
-.editor img,
-.phones img,
-.laptop img {
-    width: auto;
-    height: 100%;
-}
+  
+
 .light {
     display: inline;
 }
+nav.nav {
+    height: 75px;
+}
 nav {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
-    padding-top: .5rem;
+    align-items: center;
+    padding-top: 2rem;
     margin-left: 7rem;
 }
-
-.logbtn {
-    text-align: right;
+.dropbtn {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem; 
 }
 
 .future {
-    align-self:center;
-    padding-top: 8rem;
+    align-self:flex-end;
+    padding-top: 0rem;
 }
-.editor {
-    padding-top: 3rem;
-}
+
 .main1 {
     justify-content: center;
     align-self: center;
@@ -285,9 +282,52 @@ nav {
 .main2, .main3 {
     align-self: center;
 }
+.editor {
+    width: 100%;
+    align-self: center;
+    overflow: hidden;
+    padding-top: 2rem;
+    margin-right: 0rem;
+}
 .laptop {
+    width: 100%;
+    align-self: center;
     display: flex;
-    justify-content:flex-end;
+    flex-direction: row-reverse;
+    flex-grow: 2;
+    padding-bottom: 4rem;
+    margin-left: -3rem;
+    overflow: hidden;
+}
+.editor img {
+    width: 135%;
+    max-width: 950px;
+    height: auto;    
+}
+.laptop img {
+    width: 130%;
+    height: auto;    
+}
+.phones {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+@media screen and (min-width:1500px) {
+    .phones {
+        width: 90%;
+        max-width: 600px;
+        height: auto;
+        max-height: 650px;
+        padding: 0;
+    }
+    .editor img {
+        width: 100%;
+        max-width: 900px;
+        height: auto;    
+    }
+
+    
 }
 .logo2 {
     padding-top: 2rem;
@@ -297,12 +337,38 @@ nav {
     margin-top: 4rem;
 }
 .main2bg {
-    background: url("../images/bg-pattern-circles.svg") no-repeat center fixed, linear-gradient(to right, hsl(237, 17%, 21%) , hsl(237, 23%, 32%));
-    background-position: bottom;
-    height: 70%;
+    background: url("../images/bg-pattern-circles.svg") no-repeat, linear-gradient(to right, hsl(237, 17%, 21%) , hsl(237, 23%, 32%));
+    background-position: left;
+    height: 45vh;
     align-self: center;
     margin-top: -3rem;
     border-radius: 0 100px 0 100px;
+}
+@media screen and (max-width:1300px) {
+    .main2bg {
+        height:55%;
+    }
+}
+@media screen and (max-width:1200px) {
+    .main2bg {
+        height:48%;
+    }
+}
+    @media screen and (max-width:1100px) {
+        .main2bg {
+            height:60%;
+        }
+}
+@media screen and (max-width:950px) {
+    .main2bg {
+        height:70%;
+    }
+    .phones {
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+        width: 110%;
+        height: auto;
+    }
 }
 .main2 {
     color: hsl(0, 0%, 100%);
@@ -311,17 +377,18 @@ nav {
     color: hsl(0, 0%, 80%);
 }
 .main3 {
-    margin-bottom: 0rem;
+    padding-bottom: 4rem;
 }
 .footerbg {
     background-color: rgb(0, 0, 0);
     border-radius: 0 70px 0 0;
+    overflow: hidden;
 }
 footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-bottom: 1.5rem;
+    overflow: hidden;
 }
 .product, .company, .connect {
     display: flex;
@@ -352,53 +419,35 @@ footer a:hover {
                 Navigation
 ******************************************************/
 
-
-/* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
   }
-  
-  /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
     display: block;
     color: hsl(0, 0%, 100%);
     text-align: center;
-    padding: 14px 16px;
+    padding: 0rem;
+    margin-left: 1rem;
     text-decoration: none;
-    font-size: 17px;
   }
   
 
-
-  /* Style active class dropdown arrow*/
-
-.dropbtn img {
-    padding-top: 1.3rem;
+.dropdown img {
+    padding: 0rem .2rem;
 }
 .dropbtn a:hover ~ img {
   transform: rotate(180deg);
-  padding-bottom: 1.3rem;
+  transition: 0.3s ease-in-out;
 }
 
 
-
-
-
-  
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-    display: none;
-  }
-  
-  /* Dropdown container - needed to position the dropdown content */
-  .dropdown {
+.dropdown {
     float: left;
     overflow: hidden;
   }
 
-  /* Style the dropdown button to fit inside the topnav */
+
   .dropdown .dropbtn {
     font-size: 17px;
     border: none;
@@ -409,7 +458,7 @@ footer a:hover {
     margin: 0;
   }
   
-  /* Style the dropdown content (hidden by default) */
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -444,7 +493,81 @@ footer a:hover {
 
 
 
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 1070px) {
+    
+    .hr {
+        display: none;
+    }
+
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 8% 42% 42% 8%;
+        grid-template-rows: 600px 100px 700px 450px 650px 300px;
+        grid-template-areas: 
+            'header header header header'
+            '. future future .'
+            '. main1 editor editor'
+            '. phones main2 .'
+            'laptop laptop main3 .'
+            'footer footer footer footer';
+    }
+
+    .future {
+        padding-top: 0rem;
+        align-self: center;
+    }
+    .main2 {
+        padding-left: 1.5rem;
+    }
+    .editor img {
+        width: 150%;
+        height: auto;
+        
+    }
+    .phones {
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    .laptop {
+        display: flex;
+        flex: 1 0 100%;
+        flex-direction: row-reverse;
+        width: 100%;
+        align-self: center;
+        justify-self:left;
+        overflow: hidden;
+        margin-left: 0rem;
+       /* padding-bottom: ;6rem; */
+    }
+    .laptop img {
+        width: 150%;
+        height: auto;
+    }
+    
+}
+
+
+
+  
   @media screen and (max-width: 750px) {
     .desktop, .light {
         display: none;
@@ -453,11 +576,18 @@ footer a:hover {
         display: inline;
     }
     
+    
+
+
+
 
   
 /******************************************************
        Navigation   Style Responsive Nav Menu
 ******************************************************/
+
+
+
 
 
     nav {
@@ -467,61 +597,64 @@ footer a:hover {
     .topnav .dropdown, .dropbtn {
         float: none;
     } 
-    .icon {
-        display: inline;
-        justify-self: end;
-        padding-right: 2rem;
-        padding-top: 3rem;
-     }
-    .icon button {
+    .hamburger {
+        display: block;
+        position: absolute;
+        z-index: 100;
+        top: 3rem;
+        right: 2rem;
+        padding: 4px;
         border: none;
         background: transparent;
         cursor: pointer;
-    }
-    .icon img {
-        width: calc(100% + .5rem);
-        height: auto;
+     }
+    .closeIcon {
+        display: none; 
     }
     .topnav a {
         color: hsl(240, 10%, 16%);
     }
-    
-    
+    nav.nav {
+        height: 80vh;
+    }
 
     .nav {
-        display: none;
+        position: fixed;
+        transform: translateY(-150%);
+        transition-timing-function: ease-in-out;
+        transition: 0.35s;
         flex-direction: column;
-        justify-self: center;
         align-items: center;
-        width: 85%;
-        max-width: 90vw;
-        min-height: 70vh;
-        margin-top: 1rem;
+        height: 100%;
+        top: 100px;
+        left: 10%;
+        right: 10%;
+        bottom: 5%;
+        z-index: 99;
+        padding-top: 4rem;
         background:hsl(0, 0%, 100%);
         border-radius: 5px;
         box-shadow: 0px 15px 7px rgb(185, 185, 185);
-        z-index: 1;
+    }
+    .showNav {
+        transform: translateY(0);
+        padding: 0;
     }
      
-
     .topnav {
-        display: none;
+        display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
         width: 275px;
         height: 100%;
-        justify-content: flex-start;
+        justify-items: flex-start;
         align-items: center;
-        padding-top: 1rem;  
+        padding-top: 0rem;  
     }
     .topnav {
         position: relative;
     }
-    .topnav a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+  
     .topnav a {
         float: none;
         display: inline-block;
@@ -540,15 +673,14 @@ footer a:hover {
     .dropdown {
         display: flex;
         flex-direction: column;
-        justify-self: center;
         width: 100%;
     }
     .dropbtn {
         display: flex;
         flex-direction: row;
         text-align: center;
-        justify-content: center;
         align-items: center;
+        padding-bottom: .3rem;
         padding-left: 0;
         margin-left: 0;
         padding-right: 0;
@@ -586,8 +718,6 @@ footer a:hover {
       padding-bottom: 1.3rem;
     }
 
-
-       
     .dropbtn a {
         font-weight:500;
         padding: 1.3rem 0;   
@@ -595,9 +725,10 @@ footer a:hover {
     .dropdown-content a {
         font-size: .9rem;
         font-weight:500;
-        padding: .6rem 1rem;
+        padding: .4rem 1rem;
     }
-    hr {
+    .hr {
+        display: block;
         width: 85%;
         border: 2px solid rgb(239, 239, 241);
     }
@@ -611,7 +742,7 @@ footer a:hover {
         text-align: center;
         gap: .7rem;
         width: 200px;
-        margin: 1.5rem 0;
+        margin: .8rem 0 1rem 0;
     }
     
     .signup {
@@ -645,13 +776,8 @@ footer a:hover {
         margin: 0 .7rem;
     }
    
-    
-    
-
-
-    
-    
-    
+  
+      
    
 
 
@@ -661,7 +787,6 @@ footer a:hover {
 /****************************************************
             Responsive Styles SMall screens
 ****************************************************/
-
 
 
 
@@ -683,6 +808,7 @@ footer a:hover {
     .headercta p {
         max-width: 25ch;    
     }
+
     .logo {
         margin-top: 2rem;
     }
@@ -690,16 +816,17 @@ footer a:hover {
     .logo, .logo2 {
         width: 30%;
         min-width: 120px;
-   }
- 
-    
-    img {
-        width: 100%;
-        height: auto;
-        margin: auto;
-        text-align: center;
     }
-    .editor img, .laptop img {
+    .future {
+        align-self: center;
+        justify-self: center;
+    }
+ 
+    .editor img {
+        width:90%;
+        height: auto;
+    }
+    .laptop img {
         width:100%;
         height: auto;
     }
@@ -710,6 +837,8 @@ footer a:hover {
     .phones {
         align-self: center;
         justify-self: center;
+        width: 80%;
+        height: auto;
         padding-top: 2rem;
     }
     .laptop {
@@ -717,17 +846,24 @@ footer a:hover {
         justify-content:center;
         width: 100%;
         height: auto;
-        padding: 0rem 0;
+        padding: 0;
+        margin: 0;
     }
 
 
     .future {
-        align-self:center;
-        padding-top: 8rem;
+        padding-top: 0rem;
     }
-    .main1 p, .main2 p, .main3 p {
+    .main1 p, .main3 p {
+        width: 70%;
+        max-width: 70ch;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 1.7rem;
+    }
+    .main2 p {
         width: 80%;
-        max-width: 40ch;
+        max-width: 60ch;
         text-align: center;
         margin: 0 auto;
         line-height: 1.7rem;
@@ -740,13 +876,14 @@ footer a:hover {
     .main2 h2 {
         font-size: 2.5rem;
         text-align: center;
+        padding-top: 1rem;
     }
     .main1 {
         text-align: center;
         margin-top: 1rem;
     }
     .main2 {
-        align-self: flex-start;
+        align-self: center;
         justify-self: center;
     } 
     
@@ -755,25 +892,31 @@ footer a:hover {
         justify-self: center;
         margin-bottom: 2rem;
     }
-    
+    .sec3 {
+        max-width: 20ch;
+        padding-top: 2rem;
+        margin-top: 0;
+    }
     #sec2, #sec5 {
         margin-top: 4rem;
     }
     .main2bg {
         background: url("../images/bg-pattern-circles.svg") no-repeat, linear-gradient(right, hsl(237, 17%, 21%) , hsl(237, 23%, 32%));
-        background-position: bottom center;
+        background-position: top center;
         background-size:cover;
         background-attachment: fixed;
         width: 100%;
         height: 100%;
         overflow: hidden;
-        
         border-radius: 0 100px 0 100px;
         justify-self: center;
     }
     
 
-
+    .logo2 {
+        justify-self: center;
+        align-self: center;
+    }
 
     .footerbg {
         background-color: rgb(0, 0, 0);
@@ -784,6 +927,7 @@ footer a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         padding-top: 3rem;
         padding-bottom: 1.5rem;
     }
@@ -800,7 +944,7 @@ footer a:hover {
         line-height: 2rem;
     }
 
-    
+
 
 
 
@@ -818,10 +962,9 @@ footer a:hover {
 
 .grid {
     display: grid;
-    width: 100vw;
-    overflow: hidden;
+    width: 100%;
     grid-template-columns: 1rem 1fr 1fr 1rem;
-    grid-template-rows: 100px 70vh 150px 400px 750px 200px 200px 400px 500px 800px 150px 800px;
+    grid-template-rows: 100px 80vh 150px 400px 750px 180px 180px 70vh 500px 800px 150px 800px;
     grid-template-areas: 
         'header header header header'
         'header header header header'
@@ -829,7 +972,7 @@ footer a:hover {
         '. editor editor .'
         '. main1 main1 .'
         '. phones phones .'
-        '. . . .'
+        '. phones phones .'
         '. main2 main2 .'
         '. laptop laptop .'
         '. main3 main3 .'
@@ -843,10 +986,6 @@ footer a:hover {
 nav {
     grid-row: 2 / 3;
     grid-column: 2 / 4;
-}
-#icon {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
 }
 header {
     grid-area: header;
@@ -893,3 +1032,99 @@ footer {
     grid-column: 2 / 4;
 }
   }
+
+
+
+@media screen and (max-width:400px) {
+    .main1 h3, .main3 h3 {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }  
+    .main2 h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .main1 {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .main2 {
+        align-self:flex-start;
+        justify-self: center;
+    } 
+    
+    .main3 {
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 2rem;
+    }
+    .sec3 {
+        max-width: 20ch;
+        padding-top: 0rem;
+        margin-top: 0;
+    }
+    #sec2, #sec5 {
+        margin-top: 4rem;
+    }
+    .main1 p, .main2 p, .main3 p {
+        width: 90%;
+        max-width: 70ch;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 1.7rem;
+    }
+    .main2bg {
+        background: url("../images/bg-pattern-circles.svg") no-repeat, linear-gradient(right, hsl(237, 17%, 21%) , hsl(237, 23%, 32%));
+        background-position: top center;
+        background-size:cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 0 100px 0 100px;
+        justify-self: center;
+    }
+    .phones {
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+        height: auto;
+        padding-top: 2rem;
+    }
+    .editor {
+        padding: 0;
+    }
+    .logo2 {
+        justify-self: center;
+        align-self: center;
+    }
+    footer {
+        align-self: center;
+        justify-self: center;
+        padding-top: 3rem;
+        padding-bottom: 0;
+    }
+
+
+    .grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1rem 1fr 1fr 1rem;
+        grid-template-rows: 100px 80vh 100px 300px 750px 180px 180px 70vh 300px 680px 150px 650px;
+        grid-template-areas: 
+            'header header header header'
+            'header header header header'
+            '. future future .'
+            '. editor editor .'
+            '. main1 main1 .'
+            '. phones phones .'
+            '. phones phones .'
+            '. main2 main2 .'
+            '. laptop laptop .'
+            '. main3 main3 .'
+            'footer footer footer footer';
+    }
+    
+}    
