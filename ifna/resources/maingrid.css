@@ -1,0 +1,259 @@
+
+    
+
+    /**********************************
+            Grid Layout
+    **********************************/
+@media (min-width:1070px) {
+    
+
+    .grid-container {
+        display: grid;
+        position: absolute;
+        width: 85vw;
+        height: 100vh;
+
+        gap: 0rem;
+        grid-template-columns: 2% repeat(4, 1.5fr) repeat(2, 1fr) 2%;
+        grid-template-rows: 40px 50px repeat(7, 1fr) .5fr;
+        margin: 0 auto;
+        z-index: 1;
+    }
+    .toprow {
+        grid-row: 1 / 2;
+        grid-column: 2 / 8;
+    }
+    .primary-logo {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+    header {
+        grid-row: 2 / 3;
+        grid-column: 2 / 8;
+    }
+
+
+    .hero-content {
+        grid-row: 3 / 9;
+        grid-column: 2 / 6;
+    }
+    .slideshow {
+        grid-row: 3 / 9;
+        grid-column: 2 / 6;
+    }
+
+    .founder {
+        grid-row: 3 / 5;
+        grid-column: 6 / 8;
+    }
+
+    .mission {
+        grid-row: 5 / 7;
+        grid-column: 6 / 8;
+        margin: 0;
+        padding: 0;
+    }
+    .membership {
+        grid-row: 7 / 9;
+        grid-column: 6 / 8;
+    }
+    .members-btns {
+        grid-row: 9 / 10;
+        grid-column: 2 / 7;
+    }
+    
+}
+    /**********************************
+        Main Styles
+    **********************************/
+
+    .toprow {
+        background-color: #838C91;
+        justify-content: right;
+        align-items: center;
+    }
+    .toprow-nav a{
+        color: whitesmoke;
+        padding: 1.5rem;
+        font-size: .9rem;
+    }
+    
+
+    .home {
+        position: relative;
+        border-radius: 5px;
+        backdrop-filter: blur(1rem);
+        z-index: 1;
+    }
+    /*
+    @supports (backdrop-filter: blur(1rem)) {
+        .home {
+            background-color: hsl(0 0% 100% / .9);
+            backdrop-filter: blur(1rem);
+        }
+    }*/
+
+    header {
+        background-color: #fff;
+    }
+
+    .hero-content-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(200 30% 50% / .4);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: soft-light;
+        width: 100%;
+        height: 100%;
+        border: 1px solid whitesmoke;
+
+    }
+
+    .moto p {
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        font-family: 'Caveat', cursive;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding: 1rem;
+        color: whitesmoke;
+        border-radius: 10px;
+        background-color: rgba(191, 216, 216, 0.1);
+        backdrop-filter: blur(.9rem);
+        z-index: 1000;
+
+    }
+
+    .primary-header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+   
+    .founder, .mission, .membership {
+        border: 2px solid whitesmoke;
+    }
+
+    .founder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: whitesmoke;
+        background-color: #838C91; 
+        z-index: 10;
+        transition: 1s;
+        transition-timing-function: ease-out;
+    }
+    .founder img {
+        min-width: 100px;
+        border-radius: 50%;
+        padding: 1rem;
+    }
+    .founder h2 {
+        width: 100%;
+    }
+    .founder h3 {
+        padding-block: 1rem;
+    }
+    .founder p {
+        padding-bottom: 1rem;
+        max-width: 20ch;
+    }
+    
+
+
+    .mission {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        transition: 1s;
+        transition-timing-function: ease-out;
+        
+    }
+    .mission a {
+        text-align: center;
+    }
+    .mission img {
+        justify-self: center;
+        width: 80%;
+        height: auto;
+        max-width: 400px;   
+    }
+    
+    .membership {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        color: #e48e4c;
+        background-color: #fff;
+        background-image: url(../resources/assets/IFNA_bluegreen_logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        z-index: 10;
+        transition: 1s;
+        transition-timing-function: ease-out;
+    }
+  
+    .membership h3, .membership p {
+        display: none;
+        background-color: #838c91;
+        text-shadow: 0 0 1.5rem #ecb891;
+        padding: 4.5rem 1.5rem;
+        border-radius: 10px;
+    }
+    
+    .founder:hover {
+        transform: scale(1.05);
+        background-color: rgba(44, 44, 44, 0.9);
+        z-index: 100;
+        overflow: hidden;        
+    }
+    .mission:hover {
+        transform: scale(1.05);
+        background-color: rgba(138, 168, 179, 0.9);
+        z-index: 100;
+        overflow: hidden;        
+    }
+    .membership:hover p {
+        display: block;
+        transform: scale(1.05);
+        background-color: #ffffff26;
+        backdrop-filter: blur(1rem);
+        overflow: hidden; 
+    }
+
+
+
+    .members-btns {
+        display: flex;
+        justify-content:space-between;
+        align-items: ;center;
+        text-align: center;
+        
+        color: black;
+        margin-inline: 1.5rem;
+    }
+    .members {
+        padding-block: 1.5rem;
+        padding-inline: 1rem;
+        border: 2px solid black;
+        width: ;200px;
+        max-width: 240px;
+        max-height: 85px;
+
+    }
+    
+
+
+
