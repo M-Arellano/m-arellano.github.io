@@ -1,23 +1,659 @@
+.toprow-nav {
+    display: none;
+}
+.slideshow {
+    display: none;
+}
+
+
+
+.grid-container {
+    display: grid;
+    position: absolute;
+    width: 100vw;
+    
+    gap: 0rem;
+    grid-template-columns: 10px repeat(2, 1fr) 10px repeat(2, 1fr) 10px;
+    grid-template-rows: 50px 50px repeat(5, 75px) 10px repeat(2, 75px) 10px repeat(2, 75px) 10px repeat(2, 60px);
+    margin: 0 auto;
+    z-index: 1;
+}
+.toprow {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+}
+
+header {
+    grid-row: 2 / 3;
+    grid-column: 1 / 8;
+}
+
+
+.hero-content {
+    grid-row: 3 / 8;
+    grid-column: 1 / 8;
+}
+.slideshow {
+    grid-row: 3 / 8;
+    grid-column: 1 / 8;
+}
+
+.president {
+    grid-row: 12 / 14;
+    grid-column: 2 / 4;
+}
+
+.mission {
+    grid-row: 9 / 11;
+    grid-column: 2 / 7;
+}
+.membership {
+    grid-row: 12 / 14;
+    grid-column: 5 / 7;
+}
+footer {
+    grid-row: 15 / 17;
+    grid-column: 1 / 8;
+}
+
+
+
+
+
+
+.moto p {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 1rem;
+    color: whitesmoke;
+    text-shadow: 0 0 5px steelblue;
+    border-radius: 10px;
+    background-color: rgba(191, 216, 216, 0.377);
+    backdrop-filter: blur(.2rem);
+    z-index: 1000;
+    }
+
+.toprow {
+    background-color: #838C91;
+}
+header {
+    background-color: #fff;
+}
+
+.hero-content {
+    background-image: url(../resources/assets/home-main/d-group2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.president {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: whitesmoke;
+    background-color: #838c916c;
+    background-image: url(../resources/assets/president/drtsokosjpg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-blend-mode:multiply;
+    padding-bottom: .5rem;
+}
+.presidentbiolink {
+    padding: .1rem;
+    border: 1px solid whitesmoke;
+}
+.president img {
+    min-width: 100px;
+    border-radius: 50%;
+    padding: 1rem;
+
+}
+
+.president h3 {
+    padding-block: .5rem;
+}
+.president p {
+    display: none;
+    padding-bottom: .5rem;
+    max-width: 20ch;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fff;
+    background-image: url(../resources/assets/mission.png), url(../resources/assets/horizon.jpg);     
+    background-repeat: no-repeat, no-repeat;
+    background-size: 75%, cover;
+    background-position: center, bottom;
+    padding-bottom: .5rem;
+}
+.mission a {
+    text-align: center;
+}
+.mission img {
+    justify-self: center;
+    width: 80%;
+    height: auto;
+    max-width: 400px;   
+}
+.missionlink {
+    padding: .2rem;
+    border: 1px solid whitesmoke;
+}
+
+.membership {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: .5rem;
+    color: #e48e4c;
+    background-color: #fff;
+    background-image: url(../resources/assets/IFNA_bluegreen_logo.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center;
+}
+
+.membershiplink {
+    font-size: .9rem;
+    color: #e48e4c;
+    letter-spacing: 1px;
+    padding: .2rem;
+    border: 1px solid #e48e4c;
+}
+footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.3rem;
+    width: 100%;
+    background-color: #838C91;
+    margin: 0 auto;
+}
+footer p {
+    max-width: 80%;
+}
+
+
+
+
+@media (min-width:768px) {
+    .grid-container {
+        display: grid;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        gap: 0rem;
+        grid-template-columns: 10px repeat(2, 1fr) 10px repeat(2, 1fr) 10px;
+        grid-template-rows: 50px 50px repeat(5, 75px) 10px repeat(2, 130px) 10px repeat(2, 75px) 9px repeat(2, 55px);
+        margin: 0 auto;
+        z-index: 1;
+    }
+    
+    .moto p {
+        position: absolute;
+        top: 25%;
+        left: 27.5%;
+        font-family: 'Caveat', cursive;
+        font-size: 2.5rem;
+    }
+    .mission {
+        background-image: url(../resources/assets/mission.png), url(../resources/assets/horizon.jpg);     
+        background-repeat: no-repeat, no-repeat;
+        background-size: 75%, cover;
+        background-position: center, center;
+        padding-bottom: .5rem;
+    }
+    .membership {
+        background-size: 30%;
+    }
+    .president p {
+        display: block;
+    }
+    .president {
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        padding-left: 1rem;
+    }
+        
+    
+}
+
+
+
+@media (min-width:1024) {
+    .mission {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #fff;
+        background-image: url(../resources/assets/mission.png), url(../resources/assets/horizon.jpg);     
+        background-repeat: no-repeat, no-repeat;
+        background-size: 50%, cover;
+        background-position: center, bottom;
+        padding-bottom: .5rem;
+    }
+    .moto p {
+        position: absolute;
+        top: 30%;
+        left: 55%;
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width:1070px) {
+    .toprow-nav {
+        display: none;
+    }
+    .primary-navigation {
+        display: none;
+    }
+    .slideshow {
+        display: block;
+    }
+    .primary-header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .grid-container {
+        display: grid;
+        position: absolute;
+        width: 100vw;
+        min-height: 100vh;
+        gap: 0rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 50px 50px repeat(5, 1fr) repeat(2, 100px) .5fr;
+        margin: 0 auto;
+        z-index: 1;
+    }
+    .toprow {
+        grid-row: 1 / 2;
+        grid-column: 1 / 7;
+    }
+    
+    header {
+        grid-row: 2 / 3;
+        grid-column: 1 / 7;
+    }
+
+
+    .hero-content {
+        grid-row: 3 / 8;
+        grid-column: 1 / 7;
+    }
+    .slideshow {
+        grid-row: 3 / 8;
+        grid-column: 1 / 7;
+    }
+
+    .president {
+        grid-row: 8 / 10;
+        grid-column: 1 / 3;
+    }
+
+    .mission {
+        grid-row: 8 / 10;
+        grid-column: 3 / 5;
+        margin: 0;
+        padding: 0;
+    }
+    .membership {
+        grid-row: 8 / 10;
+        grid-column: 5 / 7;
+    }
+    
+    .moto p {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        font-family: 'Caveat', cursive;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding: 1rem;
+        color: whitesmoke;
+        border-radius: 10px;
+        background-color: rgba(191, 216, 216, 0.1);
+        backdrop-filter: blur(.9rem);
+        z-index: 1000;
+        }
+
+        .toprow {
+            background-color: #838C91;
+            justify-content: right;
+            align-items: center;
+        }
+        .toprow-nav a{
+            color: whitesmoke;
+            padding: 1.5rem;
+            font-size: .9rem;
+        }
+        
+        .president {
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            color: whitesmoke;
+            background-color: #838c916c;
+            background-image: url(../resources/assets/president/drtsokosjpg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left top;
+            background-blend-mode:multiply;
+            padding-bottom: .7rem;
+        }
+        .presidentbiolink {
+            padding: .2rem;
+            border: 1px solid whitesmoke;
+        }
+
+        .president h3 {
+            padding-block: .5rem;
+        }
+        .president p {
+            display: block;
+            padding-bottom: 1.5rem;
+            max-width: 20ch;
+        }
+        
+        .mission {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #fff;
+            background-image: url(../resources/assets/mission.png), url(../resources/assets/horizon.jpg);     
+            background-repeat: no-repeat, no-repeat;
+            background-size: 75%, cover;
+            background-position: center, center;
+            padding-bottom: .5rem;
+        }
+        .mission a {
+            text-align: center;
+        }
+        
+        .missionlink {
+            padding: .2rem;
+            border: 1px solid whitesmoke;
+        }
+        
+        .membership {
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            padding-bottom: .5rem;
+            color: #e48e4c;
+            background-color: #fff;
+            background-image: url(../resources/assets/IFNA_bluegreen_logo.png);
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: center;
+        }
+        
+        .membershiplink {
+            font-size: .9rem;
+            color: #e48e4c;
+            letter-spacing: 1px;
+            padding: .2rem;
+            border: 1px solid #e48e4c;
+        }
+
+
+    }    
+
+    
+    /***
+        .grid-container {
+            display: grid;
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+    
+            gap: 0rem;
+            grid-template-columns: 2% repeat(4, 1.5fr) repeat(2, 1fr) 2%;
+            grid-template-rows: 40px 50px repeat(7, 1fr) .5fr;
+            margin: 0 auto;
+            z-index: 1;
+        }
+        ***/
+    
+
+
+
+
+
+
+
+
+    /**********************************
+     .home {
+        position: relative;
+        border-radius: 5px;
+        backdrop-filter: blur(1rem);
+        z-index: 1;
+    }
+    /*
+    @supports (backdrop-filter: blur(1rem)) {
+        .home {
+            background-color: hsl(0 0% 100% / .9);
+            backdrop-filter: blur(1rem);
+        }
+    }*/
 
     
 
-    /**********************************
-            Grid Layout
-    **********************************/
-@media (min-width:1070px) {
+@media (min-width:1200px) {
+    .toprow-nav, .primary-navigation {
+        display: inline;
+    }
+    .grid-container {
+        display: grid;
+        position: absolute;
+        width: 100vw;
+        min-height: 100vh;
+
+        gap: 0rem;
+        grid-template-columns:0% repeat(6, 1fr) 0%;
+        grid-template-rows: 40px 50px repeat(6, 1fr) .8fr;
+        margin: 0 auto;
+        z-index: 1;
+    }
+    .toprow {
+        grid-row: 1 / 2;
+        grid-column: 1 / 9;
+    }
+    
+    header {
+        grid-row: 2 / 3;
+        grid-column: 1 / 9;
+    }
+
+
+    .hero-content {
+        grid-row: 3 / 8;
+        grid-column: 1 / 9;
+    }
+    .slideshow {
+        grid-row: 3 / 8;
+        grid-column: 1 / 9;
+    }
+
+    .president {
+        grid-row: 8 / 10;
+        grid-column: 1 / 4;
+    }
+
+    .mission {
+        grid-row: 8 / 10;
+        grid-column: 4 / 6;
+        margin: 0;
+        padding: 0;
+    }
+    .membership {
+        grid-row: 8 / 10;
+        grid-column: 6 / 9;
+    }
+    footer {
+        grid-row: 10 / 11;
+        grid-column: 1 / 9;
+    }
+
+
+
+
+    .moto p {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        font-family: 'Caveat', cursive;
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding: 1rem;
+        color: whitesmoke;
+        border-radius: 10px;
+        background-color: rgba(191, 216, 216, 0.1);
+        backdrop-filter: blur(.9rem);
+        z-index: 1000;
+        }
+    
+
+    .primary-header {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-item {
+        font-size: 1rem;
+    }
+
+   
+    .president, .mission, .membership {
+        border: 6px solid #dedede;
+    }
+
+    .president {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        color: whitesmoke;
+        background-color:  #838C91; 
+        padding-bottom: .5rem;
+        z-index: 10;
+        transition: 1s;
+        transition-timing-function: ease-out;
+    }
+    
+    .president h3 {
+        padding-block: 1rem;
+    }
+    .president p {
+        padding-bottom: 1.5rem;
+        max-width: 20ch;
+    }
+    .presidentbiolink {
+        justify-self: flex-end;
+    }
+
+
+    .mission {
+        display: flex;
+        align-items: center;
+        padding-bottom: .5rem;
+        z-index: 10;
+        transition: 1s;
+        transition-timing-function: ease-out;
+        
+    }
+    .missionlink {
+        text-align: center;
+    }
+    
+    
+    .membership {
+        justify-items: flex-end;
+        width: 100%;
+        height: 100%;
+        color: #e48e4c;
+        background-color: #fff;
+        background-image: url(../resources/assets/IFNA_bluegreen_logo.png);
+        background-repeat: no-repeat;
+        background-size: 42%;
+        background-position: center;
+        padding-bottom: .5rem;
+        z-index: 10;
+        transition: 1s;
+        transition-timing-function: ease-out;
+    }
+    
+    .president:hover {
+        transform: scale(1.1);
+        z-index: 100;
+        overflow: hidden;        
+    }
+    .mission:hover {
+        transform: scale(1.1);
+        z-index: 100;
+        overflow: hidden;        
+    }
+    .membership:hover {
+        transform: scale(1.1);
+        z-index: 100;
+        overflow: hidden; 
+    }
+}
+
+
+
+@media (min-width:1400px) {
     
 
     .grid-container {
         display: grid;
         position: absolute;
-        width: 85vw;
+        width: 100vw;
         height: 100vh;
 
         gap: 0rem;
-        grid-template-columns: 2% repeat(4, 1.5fr) repeat(2, 1fr) 2%;
-        grid-template-rows: 40px 50px repeat(7, 1fr) .5fr;
+        grid-template-columns:2% repeat(4, 1.5fr) repeat(2, 1fr) 2%;
+        grid-template-rows: 40px 50px repeat(6, 1fr) repeat(2, .5fr);
         margin: 0 auto;
         z-index: 1;
+    }
+    .lmargin {
+        grid-row: 3 / 11;
+        grid-column: 1 / 2;
+    }
+    .rmargin {
+        grid-row: 3 / 11;
+        grid-column: 8 / 9;
     }
     .toprow {
         grid-row: 1 / 2;
@@ -42,13 +678,13 @@
         grid-column: 2 / 6;
     }
 
-    .founder {
-        grid-row: 3 / 5;
+    .president {
+        grid-row: 5 / 7;
         grid-column: 6 / 8;
     }
 
     .mission {
-        grid-row: 5 / 7;
+        grid-row: 3 / 5;
         grid-column: 6 / 8;
         margin: 0;
         padding: 0;
@@ -57,203 +693,119 @@
         grid-row: 7 / 9;
         grid-column: 6 / 8;
     }
-    .members-btns {
-        grid-row: 9 / 10;
-        grid-column: 2 / 7;
+    footer {
+        grid-row: 9 / 11;
+        grid-column: 2 / 8;
     }
-    
-}
-    /**********************************
-        Main Styles
-    **********************************/
 
-    .toprow {
-        background-color: #838C91;
-        justify-content: right;
-        align-items: center;
-    }
-    .toprow-nav a{
-        color: whitesmoke;
-        padding: 1.5rem;
-        font-size: .9rem;
-    }
-    
 
-    .home {
-        position: relative;
-        border-radius: 5px;
-        backdrop-filter: blur(1rem);
-        z-index: 1;
+    .president, .mission, .membership {
+        border: none;6px solid #dedede;
     }
     /*
-    @supports (backdrop-filter: blur(1rem)) {
-        .home {
-            background-color: hsl(0 0% 100% / .9);
-            backdrop-filter: blur(1rem);
-        }
-    }*/
-
-    header {
-        background-color: #fff;
+    .lmargin {
+        border-right: 2px solid #838C91;
     }
-
-    .hero-content-img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: hsl(200 30% 50% / .4);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: soft-light;
-        width: 100%;
-        height: 100%;
-        border: 1px solid whitesmoke;
-
+    .rmargin {
+        border-left: 2px solid #838C91;
     }
-
-    .moto p {
-        position: absolute;
-        top: 40%;
-        left: 25%;
-        font-family: 'Caveat', cursive;
-        font-size: 3rem;
-        font-weight: 700;
-        letter-spacing: 2px;
-        padding: 1rem;
-        color: whitesmoke;
-        border-radius: 10px;
-        background-color: rgba(191, 216, 216, 0.1);
-        backdrop-filter: blur(.9rem);
-        z-index: 1000;
-
-    }
-
-    .primary-header {
-        justify-content: space-between;
-        align-items: center;
-    }
-
-   
-    .founder, .mission, .membership {
-        border: 2px solid whitesmoke;
-    }
-
-    .founder {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        color: whitesmoke;
-        background-color: #838C91; 
+    */
+        .president {
+        justify-content: left;
+        background-color: #838c913f;
+        padding-left: 1rem;
+        padding-bottom: .5rem;
         z-index: 10;
         transition: 1s;
         transition-timing-function: ease-out;
     }
-    .founder img {
-        min-width: 100px;
-        border-radius: 50%;
-        padding: 1rem;
-    }
-    .founder h2 {
-        width: 100%;
-    }
-    .founder h3 {
+    
+    .president h3 {
         padding-block: 1rem;
     }
-    .founder p {
-        padding-bottom: 1rem;
+    .president p {
+        padding-bottom: 1.5rem;
         max-width: 20ch;
     }
-    
+    .presidentbiolink {
+        justify-self: flex-end;
+    }
 
 
     .mission {
-        display: flex;
-        justify-content: center;
         align-items: center;
+        padding-bottom: 1.5rem;
+        background-image: url(../resources/assets/mission.png), url(../resources/assets/horizonlg.jpg);
+        background-size: 85%, cover;
+        background-position: center, top;
         z-index: 10;
         transition: 1s;
         transition-timing-function: ease-out;
         
     }
-    .mission a {
+    .missionlink {
         text-align: center;
-    }
-    .mission img {
-        justify-self: center;
-        width: 80%;
-        height: auto;
-        max-width: 400px;   
     }
     
+    
     .membership {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        height: 100%;
         color: #e48e4c;
         background-color: #fff;
         background-image: url(../resources/assets/IFNA_bluegreen_logo.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 59%;
         background-position: center;
+        padding-bottom: .9rem;
         z-index: 10;
         transition: 1s;
         transition-timing-function: ease-out;
     }
-  
-    .membership h3, .membership p {
-        display: none;
-        background-color: #838c91;
-        text-shadow: 0 0 1.5rem #ecb891;
-        padding: 4.5rem 1.5rem;
-        border-radius: 10px;
-    }
+
     
-    .founder:hover {
-        transform: scale(1.05);
-        background-color: rgba(44, 44, 44, 0.9);
-        z-index: 100;
-        overflow: hidden;        
-    }
-    .mission:hover {
-        transform: scale(1.05);
-        background-color: rgba(138, 168, 179, 0.9);
-        z-index: 100;
-        overflow: hidden;        
-    }
-    .membership:hover p {
-        display: block;
-        transform: scale(1.05);
-        background-color: #ffffff26;
-        backdrop-filter: blur(1rem);
-        overflow: hidden; 
-    }
+}  
 
 
 
-    .members-btns {
-        display: flex;
-        justify-content:space-between;
-        align-items: ;center;
-        text-align: center;
+@media (min-width:1600px) {
+    
+
+    .grid-container {
+        display: grid;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+
+        gap: 0rem;
+        grid-template-columns:5% repeat(4, 1.5fr) repeat(2, 1fr) 5%;
+        grid-template-rows: 40px 50px repeat(6, 1fr) repeat(2, .5fr);
+        margin: 0 auto;
+        z-index: 1;
+    }
+    .mission {
+        align-items: center;
+        padding-bottom: 1.5rem;
+        background-image: url(../resources/assets/mission.png), url(../resources/assets/horizonlg.jpg);
+        background-size: 85%, cover;
+        background-position: center, top;
+        z-index: 10;
+        transition: 1s;
+        transition-timing-function: ease-out;
         
-        color: black;
-        margin-inline: 1.5rem;
     }
-    .members {
-        padding-block: 1.5rem;
-        padding-inline: 1rem;
-        border: 2px solid black;
-        width: ;200px;
-        max-width: 240px;
-        max-height: 85px;
-
+    .membership {
+        background-image: url(../resources/assets/IFNA_bluegreen_logo.png);
+        background-repeat: no-repeat;
+        background-size: 57%;
+        background-position: center;
+        padding-bottom: .8rem;   
     }
-    
-
-
-
+}
+@media (min-width:1800px) {
+    .membership {
+        background-image: url(../resources/assets/IFNA_bluegreen_logo.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        padding-bottom: .8rem;   
+    }
+}
