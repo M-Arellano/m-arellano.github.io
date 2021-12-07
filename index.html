@@ -1,187 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/style.css">
-    <link rel="stylesheet" href="resources/maingrid.css">
-    <link rel="stylesheet" href="resources/herobg.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="resources/nav.js" defer></script>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Projects by Manuel Arellano</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://kit.fontawesome.com/2bb263ab80.js" crossorigin="anonymous"></script>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-    <title>IFNA World</title>
-</head>
-<body>
-    
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-    <div class="home grid-container">
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<i class="fa fa-code fa-2x" aria-hidden="true"></i>
+							
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Manuel Arellano</h1>
+								<p>Front End Web Developer</p>
+								<p>Fully responsive sites designed with html5, css3, and JavaScript.</p>
+								
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#blogr">Blogr</a></li>
+								<li><a href="#audrey">Audrey</a></li>
+								<li><a href="#gtkfa">gtkfa</a></li>
+							<!--<li><a href="#wip">WIP</a></li>		-->						
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
 
-        <div class="lmargin"></div><div class="rmargin"></div>
-        <div class="toprow flex">
-            
-            <div aria-hidden="true" class="toprow-nav flex">
-                
-                <a class="menuItem" href="#">Workshops</a>
-                <a class="menuItem" href="#">Upcoming Conferences</a>
-                <a class="menuItem" href="#">World Congress</a>
-                <a class="menuItem" href="#">Newsletter</a>
-                <a class="menuItem" href="#">Membership</a>
-            </div>
-        </div>
-       <!---------------- 
-        <div class="primary-logo">
-            <img src="/resources/assets/OGlogo.png" alt="IFNA logo" width="100px">
-        </div>
-        --------------------->
+				<!-- Main -->
+					<div id="main">
 
-        <header class="primary-header flex">
-            
-            <div class="brand">
-                <H1><a href="#">I<span>nternational</span> F<span>ederation of</span> N<span>onlinear</span> A<span>nalysts</span></a></H1>
-            </div>
-    
-            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-                <span class="sr-only">Menu</span>
-            </button>
-    
-    
-            <nav>
-                <div id="primary-navigation" data-visible="false" class="nav primary-navigation flex">
-                    <div class="nav-item">
-                        <a class="menuItem" href="">Home</a>
-                    </div>
-                    <div class="nav-item">
-                        <a class="menuItem" href="">Mission</a>
-                    </div>
-                    <div class="nav-item">
-                        <a class="menuItem" href="">Journals</a>
-                    </div>
-                    
-                    <div class="dropdown nav-item">
-                        <button class="dropbtn"><a href="#">Members</a><img src="resources/assets/icons/icon-arrow-light.svg" class="light" alt=""> <img src="resources/assets/icons/icon-arrow-dark.svg" class="dark" alt=""></button>
-                        <div class="dropdown-content">
-                            <a class="menuItem" href="#">Board of Directors</a>
-                            <a class="menuItem" href="#">Executive Committee Members</a>
-                            <a class="menuItem" href="#">IFNA Global Advisors</a>
-                            <a class="menuItem" href="#">IFNA Global Coordinators</a>
-                            <a class="menuItem" href="#">IFNA Global Participants</a>
-                        </div>
-                    </div>
-                    
-                    <div class="dropdown nav-item">
-                        <button class="dropbtn"><a href="#">IFNA Centers</a><img src="resources/assets/icons/icon-arrow-light.svg" class="light" alt=""> <img src="resources/assets/icons/icon-arrow-dark.svg" class="dark" alt=""></button>
-                        <div class="dropdown-content">
-                            <a class="menuItem" href="#">Africa Centers</a>
-                            <a class="menuItem" href="#">EU Centers</a>
-                            <a class="menuItem" href="#">North America Centers</a>
-                            <a class="menuItem" href="#">South America Centers</a>
-                            <a class="menuItem" href="#">Oceania Centers</a>
-                        </div>
-                    </div>
-            
-                    <div class="dropdown nav-item">
-                        <button class="dropbtn"><a href="#">Connect</a><img src="resources/assets/icons/icon-arrow-light.svg" class="light" alt=""> <img src="resources/assets/icons/icon-arrow-dark.svg" class="dark" alt=""></button>
-                        <div class="dropdown-content">
-                            <a class="menuItem" href="#">Contact</a>
-                            <a class="menuItem" href="#">Newsletter</a>
-                            <a class="menuItem" href="#">Membership</a>
-                            <a class="menuItem" href="#">Upcoming Conferences</a>
-                        </div>
-                    </div>
-                    <div class="nav-item lg">
-                        <a class="menuItem" href="">Our Members</a>
-                    </div>
-                    <div class="nav-item lg">
-                        <a class="menuItem" href="">IFNA Centers</a>
-                    </div>
-                    <div class="nav-item lg">
-                        <a class="menuItem contact" href="">Contact</a>
-                    </div>
-    
-    
-                </div>
-            </nav>
-        </header>
-    
+						<!-- Blogr -->
+						<article id="blogr">
+							<h2 class="major">Blogr Landing page</h2>
+							<span class="image main">
+								<a href="https://m-arellano.github.io/blogr/blogr.html" target="about_blank">
+									<img src="images/blogr.png" alt="Blogr desktop and mobile landing page" /></a>																								
+							</span>
+							<p>This project was built with HTML5 and CSS3 using CSS Grid and Flexbox for a responsive layout and JavaScript for a responsive mobile nav. Utilizing grid areas and media queries, the design is fully responsive and optimized for mobile view, tablets in landscape or portrait mode, small screen, and large screen displays of 1900+px.</p>
+						</article>
+
+						<!-- Audrey -->
+						<article id="audrey">
+							<h2 class="major">Audrey Shi Realty</h2>
+							<span class="image main"><a href="https://audreyshirealty.com/" target="about_blank"><img src="images/shiyuan.png" alt="Audrey Shi Realty landing page and mobile views"></a></span>
+							<p>This is a single page scrolling site with a parallax effect. This project was built with HTML5, CSS3, and Flexbox for a responsive layout and JavaScript for a responsive mobile nav. Utilizing media queries, the design is fully responsive and optimized for mobile view, tablets in landscape or portrait mode, small screen, and large screen displays of 1900+px. </p>
+						</article>
+
+					
+
+						<!-- gtkfa -->
+							<article id="gtkfa">
+								<h2 class="major">GTKFA</h2>
+								<span class="image main"><a href="https://www.gtkfa.com" target="about_blank"><img src="images/gtkfa.png" alt="Golden Tiger Kung Fu and Extended Learning Academy home page" /></a></span>
+								<p>This site was developed for Golden Tiger Kung Fu Academy using Wordpress and Elementor. Wordpress was chosen to facilitate an easier update process for the GTKFA staff.</p>
+								<p>The course offerings quickly grew to meet the varying needs of the students after the pandemic hit. The limitations of the theme previously chosen did not meet their needs for the additional pages that were needed to support some of the new course offerings. To meet the needs of their growing course offerings some additional hand coded pages were added.</p> 
+								<p>Rather than redesigning the site from scratch the new hand coded pages were seamlessly integrated into the current theme. This enabled GTKFA to get the pages they needed up and running as quickly as possible at the lowest possible cost.</p>
+							</article>
+
+						<!-- WIP 
+						<article id="wip">
+							<h2 class="major">Work in Progress</h2>
+							<span class="image main">
+								<a href="https://github.com/M-Arellano/teacozy/blob/main/index.html" target="about_blank">
+									<img src="images/teacozy.jpg" alt="" /></a>
+										<br>
+								<a href="https://github.com/M-Arellano/IFNA/blob/main/index.html" target="about_blank">	
+										<img src="images/ifnaworld.png" alt="" /></a>
+										<br>
+								<a href="https://github.com/M-Arellano/IFNA-WIP" target="about_blank">
+									<img src="images/ifna.jpg" alt="" /></a>
+							</span>
+							<p>Here are some projects I worked on using Flexbox for a responsive layout. They are works in progress. </p>
+						</article>
+						-->
+						
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major" id="#contactaligncenter">Contact</h2>
+								<p>Manuel Arellano<br>619-565-4673<br>GRDevman@gmail.com</p>
 
 
+								<!-------------------
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								-------------------->
+								<ul class="icons">
+									
+									<li><a href="https://www.linkedin.com/in/manuel-arellano-04b800166/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/M-Arellano" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
 
-        <div class="hero-content">
-            <div class="hero-content-img-container">
-                               
-                <div class="moto">
-                    <p>"Global Diveristy<br>&nbsp&nbsp&nbsp&nbsp Cooperation and<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Collaboration"</p>
-                </div>
-                   
-            
-                    <div class="slideshow">
-                    
-                        <div class="slideshow-image" style="background-image: url('/resources/assets/home-main/d-group1.jpg')"></div>
-                        <div class="slideshow-image" style="background-image: url('/resources/assets/home-main/d-group2.jpg')"></div>
-                        <div class="slideshow-image" style="background-image: url('/resources/assets/home-main/d-group3.jpg')"></div>
-                        <div class="slideshow-image" style="background-image: url('/resources/assets/home-main/d-group4.jpg')"></div>
-                      </div>  
-               
-            </div>
+						
+					</div>
 
-        </div>
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="footer">GRDevman@gmail.com | 619-565-4673.</p>
+					</footer>
 
+			</div>
 
+		<!-- BG -->
+			<div id="bg"></div>
 
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-
-
-        <div class="president flex">
-                
-            <a href="/president.html" target="about_blank">
-               
-            <aside>
-                <h2>President</h2>
-            
-                <h3>Dr. C. Tsokos</h3>
-
-                <p>University of South Florida<br>
-                Department of Mathematics & Statistics</p>
-                <a href="/president.html" class="presidentbiolink" target="about_blank">Learn More</a>
-            </aside>
-        </div>
-
-        <div class="mission">
-            
-            <a href="#" class="missionlink" target="about_blank">Our Mission</a>
-            
-        </div>
-
-        <div class="membership flex">
-        
-            <a href="#" class="membershiplink" target="about_blank">Join Today</a>
-        </div>
-
-
-<!------------------------
-        <div class="members-btns">
-            <div class="members m1"><a class="memberItem" href="#">Board of Directors</a></div>
-            <div class="members m2"><a class="memberItem" href="#">Executive Committee Members</a></div>
-            <div class="members m3"><a class="memberItem" href="#">IFNA Global Advisors</a></div>
-            <div class="members m4"><a class="memberItem" href="#">IFNA Global Coordinators</a></div>
-            <div class="members m5"><a class="memberItem" href="#">IFNA Global Participants</a></div>
-        </div>
--->
-<footer class="flex">
-    <p>© 2009-2021 IFNA All Rights Reserved</p>
-    <p>Use of this website signifies your agreement to the Terms of Use.</p>
-    <p>Site by <a href="mailto:grdevman@gmail.com">GRDevman</a> designs</p>
-
-</footer>
-
-    </div>
- 
-    
-</body>
+	</body>
 </html>
