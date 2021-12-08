@@ -1,7 +1,3 @@
-/******************************************
-        Global Styles
-******************************************/
-
 *, ::after, ::before {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -20,9 +16,30 @@ body {
     width: 100%;
     color: #292929;
     background-color: #dedede;
+    /*
+    background-image: url(../resources/assets/spinninigglobe_Moment_dark2.jpg);  
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; */
     overflow-x: hidden;
+}/*
+@media (max-width:1070px) {
+    body {
+        background-image: url(../resources/assets/globe1100.jpg);  
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: ;cover;
+    }
 }
-
+@media (max-width:600px) {
+    body {
+        background-image: ;url(../resources/assets/globe600.jpg);  
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+    }*/
 h1,
 h2,
 h3,
@@ -38,30 +55,19 @@ h1 {
 }
 h2 {
     font-size: 1.5rem;
-    font-weight: 500;
-}
-h3 {
-    font-size: 1.1rem;
-    font-weight: 500;
 }
 .brand h1 {
+    font: 3rem;
     font-weight: 700;
     font-family: 'Lato', sans-serif;
 
 }
 .brand span {
+    font: 1.5rem;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
-    letter-spacing: 2px;   
-}
-@media (max-width:600px) {
-    .brand a {
-        font-size: .8rem;
-        justify-self: center;
-        text-align: center;
-        padding-inline: 0rem;
-        margin: 0;
-    }
+    letter-spacing: 2px;
+    
 }
 
 .membership {
@@ -70,60 +76,21 @@ h3 {
     
 }
 .membership h3 {
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 .membership p {
-    font-size: 1.5rem;
+    font-size: 4rem;
     font-weight: 900;
 }
-@media (min-width:500px) {
-    .membership h3 {
-        font-size: 2.3rem;
-    }
-    .membership p {
-        font-size: 3rem;
-        font-weight: 900;
-    }    
-}
-.mission a {
-    font-size: .8rem;
-}
-.president h2 {
+.founder h2 {
     font-size: 1rem;
 }
-.president h3 {
+.founder h3 {
     font-size: .9rem;
 }
-.president p {
-    font-size: .7rem;
+.founder p {
+    font-size: .9rem;
 }
-.president a {
-    font-size: .8rem;
-}
-.membership a {
-    font-size: .8rem;
-}
-
-@media (min-width:1070px) {
-    .president h2 {
-        font-size: 1.2rem;
-    }
-    .president h3 {
-        font-size: 1rem;
-    }
-    .president p {
-        font-size: .9rem;
-    }
-    .president a {
-        font-size: .8rem;
-    }
-}
-
-footer {
-    font-size: .85rem;
-    color: whitesmoke;
-}
-
 
 
 /**********************************
@@ -140,12 +107,12 @@ footer {
 
     /* unvisited link */
     a:link {
-        color: whitesmoke;
+        color: #4c4c4c;
     }
     
     /* visited link */
     a:visited {
-        color: whitesmoke;
+        color: #4c4c4c;
     }
     
     /* mouse over link */
@@ -158,9 +125,6 @@ footer {
     a:active {
         color: #4c4c4c;
     }
-    footer a {
-        text-decoration: underline;
-    }
 }
 
   @media (min-width:1070px) {
@@ -168,16 +132,10 @@ footer {
         a:link {
             color:#4c4c4c;
         }
-        .mission a:link {
-            color: whitesmoke;
-        }
         
         /* visited link */
         a:visited {
             color: #4c4c4c;
-        }
-        .mission a:visited {
-            color: whitesmoke;
         }
         
         /* mouse over link */
@@ -198,6 +156,7 @@ footer {
 
 
 
+
         /* mouse over link */
         .toprow a:hover {
             color: #e48e4c;
@@ -213,49 +172,26 @@ footer {
 
 
  
-  /* unvisited link */
-  .president a:link {
+/* unvisited link */
+.founder a:link {
     color: whitesmoke;
   }
   
   /* visited link */
-  .president a:visited {
+  .founder a:visited {
     color: whitesmoke;
   }
   
   /* mouse over link */
-  .president a:hover {
+  .founder a:hover {
     color: whitesmoke;
-  }
-  
-  /* selected link */
-  .president a:active {
-    color: whitesmoke;
-  }
-
-
-
-  /* unvisited link */
-  .membership a:link {
-    color: #e48e4c;
-  }
-  
-  /* visited link */
-  .membership a:visited {
-    color: #e48e4c;
-  }
-  
-  /* mouse over link */
-  .membership a:hover {
-    color: #e48e4c;
     text-decoration: underline;
   }
   
   /* selected link */
-  .membership a:active {
-    color: #e48e4c;
+  .founder a:active {
+    color: whitesmoke;
   }
-
   .brand a {
     color: #e48e4c !important;
     border-bottom: 0;
@@ -283,16 +219,37 @@ a {
 
 
 
+header {
+    margin: 0rem;
+}
+.primary-logo img {
+    margin: 0rem .5rem;
 
-
-
-
+}
+/*
+.primary-header {
+    align-items: ;center;
+    justify-content: ;space-between;
+}*/
 
 
   /***************************
         Navigation
   ***************************/
 
+
+
+
+.mobile-nav-toggle {
+    display: none;
+}
+ 
+
+/*****   Use for large screens
+  .nav {
+      padding-right: 15rem;
+  }
+*******/
   .nav-item, .dropdown {
     float: left;
     overflow: hidden;
@@ -372,18 +329,15 @@ a {
 
 
 
-  @media (max-width:1200px) {
-    .brand {
-        margin-left: 1rem;
-    }
+  @media (max-width:1070px) {
     .primary-navigation {
         position: fixed;
-        gap: 1.5rem;  
+        gap: 2rem;  
         inset: 0 0 0 30%;
         flex-direction: column;
-        padding: min(20vh, 5rem) 1em;
-        background: hsl(0 0% 100% / 0.1);
-        backdrop-filter: blur(2rem);
+        padding: min(25vh, 5rem) 2em;
+    /*    background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(2rem);*/
         z-index: 4444;
         transform: translateX(100%);
         transition: transform 350ms ease-in-out;
@@ -394,12 +348,12 @@ a {
         backdrop-filter: blur(2rem);
     }
     
-            @supports (backdrop-filter: blur(2rem)) {
-                .primary-navigation {
-                    background: hsl(0 0% 100% / 0.08);
-                    backdrop-filter: blur(2rem);
-                }
-            }
+    @supports (backdrop-filter: blur(2rem)) {
+        .primary-navigation {
+            background: hsl(0 0% 100% / 0.08);
+            backdrop-filter: blur(2rem);
+        }
+    }
 
 
     .primary-navigation[data-visible="true"] {
@@ -415,7 +369,7 @@ a {
         width: 2rem;
         height: 2rem;
         right: 2rem;
-        top: 1rem;
+        top: 2rem;
         background: url(../resources/assets/icons/icon-hamburger.svg) no-repeat;
         z-index: 7777;
         border: none;
@@ -430,7 +384,7 @@ a {
         position: relative;
     }
     .dropdown-content a {
-        font-size: 1rem;
+        font-size: 1.2rem;
         width: auto;
         line-height: 1.2rem;
         padding: .7rem .5rem;
@@ -444,11 +398,7 @@ a {
 
 
 
-@media (min-width:1200px) {
-    .mobile-nav-toggle {
-        display: none;
-    }
-
+@media (min-width:1070px) {
     .brand {
         margin-left: 1rem;
     }
@@ -473,10 +423,14 @@ a {
         line-height: 5rem;
         width: 100%;
         
-     /*   padding-block: 0rem;
-        padding-inline: 2.5rem;*/
+        padding-block: 0rem;
+        padding-inline: 2.5rem;
         border-radius: 20px;
     }
+    /*
+    .primary-navigation a {
+        font-size: ;1rem;
+    }*/
     .dropdown {
         display: none;
     }
