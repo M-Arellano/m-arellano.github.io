@@ -1,4 +1,6 @@
-  
+body {
+  margin: 0 auto;
+}
 
     /**********************************
             Grid Layout
@@ -289,9 +291,9 @@
         position: absolute;
         width: 85vw;
         height: 100vh;
-
+        Justify-self: center;
         gap: 0rem;
-        grid-template-columns: 10% repeat(4, 1.5fr) repeat(2, 1fr) 10%;
+        grid-template-columns: 2% repeat(4, 1.5fr) repeat(2, 1fr) 2%;
         grid-template-rows: 40px 50px repeat(7, 1fr) .5fr;
         margin: 0 auto;
         z-index: 1;
