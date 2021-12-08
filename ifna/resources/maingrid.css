@@ -283,4 +283,19 @@
     }
 }
 
+@media (min-width:1700px) {
+    .grid-container {
+        display: grid;
+        position: absolute;
+        width: 85vw;
+        height: 100vh;
+
+        gap: 0rem;
+        grid-template-columns: 2% repeat(4, 1.5fr) repeat(2, 1fr) 2%;
+        grid-template-rows: 40px 50px repeat(7, 1fr) .5fr;
+        margin: 0 auto;
+        z-index: 1;
+    }
+}
+
     
