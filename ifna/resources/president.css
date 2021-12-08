@@ -24,7 +24,7 @@ a {
         background-color: #e7e7e7;
         gap: 0rem;
         grid-template-columns: 10% repeat(6, 1fr) 10%;
-        grid-template-rows: 40px 50px repeat(7, 110px) min-max(100px, 800px);
+        grid-template-rows: 40px 50px repeat(7, 110px) minmax(100px, 800px);
         
         margin: 0 auto;
         z-index: 1;
